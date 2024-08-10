@@ -1,0 +1,128 @@
+* {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  background: radial-gradient(circle, white, lightgray);
+  min-height: 100vh;
+}
+
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(49, 45, 255);
+}
+.logo {
+  display: inline-block; /* Allows the logo to be centered */
+  transition: transform 0.3s ease; /* Smooth transform transition */
+  width: 80%; /* Adjust the logo size (you can change this value as needed) */
+  max-width: 300px;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotateY(360deg);
+}
+.header{
+  font-size: 4em;
+  color: rgb(1, 7, 114);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.header a {
+  text-decoration: none; 
+  color: rgb(1, 7, 114); 
+}
+.header:hover {
+  transform: scale(1.1);
+  color: rgb(3, 0, 192);
+}
+.h2{
+  font-size: 13px;
+}
+
+.content form{
+  display: flex;
+  align-items: center;
+  background-color: rgba(49, 45, 255, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px auto; 
+  max-width: 600px; 
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for comfort */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Base font size */
+  transition: border-color 0.2s; /* Quick transition */
+}
+
+input[type="text"]:focus {
+  border-color: rgb(49, 45, 255); /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.btn{
+  width:100px;
+  background-color: rgb(1, 7, 114);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px; 
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+.btn a {
+  text-decoration: none; 
+  color: rgb(1, 7, 114); 
+}
+.btn:hover {
+  background-color: rgb(3, 0, 192);
+}
+
+
+/* Voting Page */
+
+.container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  justify-content: space-evenly; /* Space out cards evenly */
+  align-items: center;
+  height: 100vh; 
+}
+
+.card {
+  background-color: white; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px; /* Margin around cards */
+  padding: 20px; /* Padding inside cards */
+  width: 220px; /* Fixed width for each card */
+  text-align: center; /* Center text */
+  transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.wrapper {
+  text-align: center; /* Center the text within the wrapper */
+}
+
+.position {
+  font-size: 3em; /* Font size for the title */
+  color: rgb(1, 7, 114); /* Title color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(255, 255, 255, 0.5); /* Text shadow */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition effects */
+  margin-bottom: 20px; /* Space between title and cards */
+}
